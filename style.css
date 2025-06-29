@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+.container {
+    max-width: 1500px;
+    width: 100%;
+     margin: 0 auto; 
+     padding: 0 20px; /* 👈 optional: để không dính sát mép */
+}
+/* CSS for header */
+.header {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #1F2937;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+.part1 {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.header-info {
+    display: flex;
+    gap: 16px;
+}
+.header-logo {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #E5E7EB;
+}
+.part2 {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.hero-section,
+.placeholder {
+  flex: 1 1 300px;
+}
+h1 {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    max-width: 500px;
+}
+.hero-section p {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+.placeholder {
+    font-size: 18px;
+    color: #E5E7EB;
+    /* background-color: grey;
+    min-width: 500px;
+    min-height: 200px; */
+    text-align: center;
+}
+.sign-up {
+    border-radius: 15%;
+    padding: 5px 17px;
+    background-color: greenyellow;
+}
+/* CSS for main  */
+main {
+    flex: 1;
+}
+.random-info {
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.random-h {
+    text-align: center;
+    /* margin-top: 20px; */
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 40px;
+}
+.random-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+.item p {
+    max-width: 200px;
+    text-align: center;
+    line-height: 1.6;
+}
+img {
+    border-radius: 10%;
+}
+
+.quotes {
+    background-color: #E5E7EB;
+    color: #1F2937;
+    font-style: italic;
+    font-size: 36px;
+    text-align: center;
+    padding: 150px;
+}
+.quotes p {
+    max-width: 1200px;
+}
+.thor {
+    text-align: right;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* CSS for call action  */
+.lastcall {
+    background-color: #F9FAF8;
+    padding: 120px;
+}
+.call-action {
+    display: flex;
+    justify-content: space-between;
+    background-color: #3882F6;
+    padding: 80px;
+    /* gap: 30px; */
+    flex-wrap: wrap;
+    text-align: left;
+}
+.call-content {
+    flex: 1 1 300px;
+}
+.sign-up-call {
+    border-radius: 15%;
+    color: #F9FAF8;
+    background-color: #3882F6;
+    border-color: white;
+    padding: 5px 30px;
+    flex-shrink: 0;
+}
+.call-content p:first-of-type {
+    font-size: 30px;
+    color: white;
+}
+.call-content p:nth-child(2){
+    color: #E5E7EB;
+}
+.footer {
+    padding: 20px 120px;
+    text-align: center;
+    color: #E5E7EB;
+}
+/* responsive  */
+@media (max-width: 768px){
+     h1 {
+    font-size: 32px;
+  }
+  .quotes p {
+  margin: 0 auto;
+}
+
+    .part1,
+    .part2,
+    .call-action {
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+
+    .hero-section,
+    .placeholder,
+    .call-content {
+        width: 100%;
+    }
+
+    .sign-up-call {
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+.hero-section,
+.placeholder {
+  flex: 1 1 300px;
+}
+.placeholder img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
